@@ -1,0 +1,25 @@
+,UTC,Mo,Tu,We,Th,Fr,Sa,Su
+0,0:30,Southsun Cove,Queensdale,Gendarran Fields,Caledon Forest,Plains of Ashford,Metrica Province,Wayfarer Foothills
+1,1:30,Metrica Province,Wayfarer Foothills,Southsun Cove,Queensdale,Gendarran Fields,Caledon Forest,Plains of Ashford
+2,2:30,Caledon Forest,Plains of Ashford,Metrica Province,Wayfarer Foothills,Southsun Cove,Queensdale,Gendarran Fields
+3,3:30,Queensdale,Gendarran Fields,Caledon Forest,Plains of Ashford,Metrica Province,Wayfarer Foothills,Southsun Cove
+4,4:30,Wayfarer Foothills,Southsun Cove,Queensdale,Gendarran Fields,Caledon Forest,Plains of Ashford,Metrica Province
+5,5:30,Plains of Ashford,Metrica Province,Wayfarer Foothills,Southsun Cove,Queensdale,Gendarran Fields,Caledon Forest
+6,6:30,Gendarran Fields,Caledon Forest,Plains of Ashford,Metrica Province,Wayfarer Foothills,Southsun Cove,Queensdale
+7,7:30,Southsun Cove,Queensdale,Gendarran Fields,Caledon Forest,Plains of Ashford,Metrica Province,Wayfarer Foothills
+8,8:30,Metrica Province,Wayfarer Foothills,Southsun Cove,Queensdale,Gendarran Fields,Caledon Forest,Plains of Ashford
+9,9:30,Caledon Forest,Plains of Ashford,Metrica Province,Wayfarer Foothills,Southsun Cove,Queensdale,Gendarran Fields
+10,10:30,Queensdale,Gendarran Fields,Caledon Forest,Plains of Ashford,Metrica Province,Wayfarer Foothills,Southsun Cove
+11,11:30,Wayfarer Foothills,Southsun Cove,Queensdale,Gendarran Fields,Caledon Forest,Plains of Ashford,Metrica Province
+12,12:30,Plains of Ashford,Metrica Province,Wayfarer Foothills,Southsun Cove,Queensdale,Gendarran Fields,Caledon Forest
+13,13:30,Gendarran Fields,Caledon Forest,Plains of Ashford,Metrica Province,Wayfarer Foothills,Southsun Cove,Queensdale
+14,14:30,Southsun Cove,Queensdale,Gendarran Fields,Caledon Forest,Plains of Ashford,Metrica Province,Wayfarer Foothills
+15,15:30,Metrica Province,Wayfarer Foothills,Southsun Cove,Queensdale,Gendarran Fields,Caledon Forest,Plains of Ashford
+16,16:30,Caledon Forest,Plains of Ashford,Metrica Province,Wayfarer Foothills,Southsun Cove,Queensdale,Gendarran Fields
+17,17:30,Queensdale,Gendarran Fields,Caledon Forest,Plains of Ashford,Metrica Province,Wayfarer Foothills,Southsun Cove
+18,18:30,Wayfarer Foothills,Southsun Cove,Queensdale,Gendarran Fields,Caledon Forest,Plains of Ashford,Metrica Province
+19,19:30,Plains of Ashford,Metrica Province,Wayfarer Foothills,Southsun Cove,Queensdale,Gendarran Fields,Caledon Forest
+20,20:30,Gendarran Fields,Caledon Forest,Plains of Ashford,Metrica Province,Wayfarer Foothills,Southsun Cove,Queensdale
+21,21:30,Southsun Cove,Queensdale,Gendarran Fields,Caledon Forest,Plains of Ashford,Metrica Province,Wayfarer Foothills
+22,22:30,Metrica Province,Wayfarer Foothills,Southsun Cove,Queensdale,Gendarran Fields,Caledon Forest,Plains of Ashford
+23,23:30,Caledon Forest,Plains of Ashford,Metrica Province,Wayfarer Foothills,Southsun Cove,Queensdale,Gendarran Fields

@@ -1,0 +1,25 @@
+Server Time (UTC),Wayfarer Foothills,Plains of Ashford,Gendarran Fields,Southsun Cove,Metrica Province,Caledon Forest,Queensdale
+0:30,Su,Fr,We,Mo,Sa,Th,Tu
+1:30,Tu,Su,Fr,We,Mo,Sa,Th
+2:30,Th,Tu,Su,Fr,We,Mo,Sa
+3:30,Sa,Th,Tu,Su,Fr,We,Mo
+4:30,Mo,Sa,Th,Tu,Su,Fr,We
+5:30,We,Mo,Sa,Th,Tu,Su,Fr
+6:30,Fr,We,Mo,Sa,Th,Tu,Su
+7:30,Su,Fr,We,Mo,Sa,Th,Tu
+8:30,Tu,Su,Fr,We,Mo,Sa,Th
+9:30,Th,Tu,Su,Fr,We,Mo,Sa
+10:30,Sa,Th,Tu,Su,Fr,We,Mo
+11:30,Mo,Sa,Th,Tu,Su,Fr,We
+12:30,We,Mo,Sa,Th,Tu,Su,Fr
+13:30,Fr,We,Mo,Sa,Th,Tu,Su
+14:30,Su,Fr,We,Mo,Sa,Th,Tu
+15:30,Tu,Su,Fr,We,Mo,Sa,Th
+16:30,Th,Tu,Su,Fr,We,Mo,Sa
+17:30,Sa,Th,Tu,Su,Fr,We,Mo
+18:30,Mo,Sa,Th,Tu,Su,Fr,We
+19:30,We,Mo,Sa,Th,Tu,Su,Fr
+20:30,Fr,We,Mo,Sa,Th,Tu,Su
+21:30,Su,Fr,We,Mo,Sa,Th,Tu
+22:30,Tu,Su,Fr,We,Mo,Sa,Th
+23:30,Th,Tu,Su,Fr,We,Mo,Sa

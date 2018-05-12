@@ -19,7 +19,7 @@ public class MainFrame extends JFrame implements ActionListener{
 	Date today;
 	Timer mytimer;
 	JButton btnToggleTimer, btnSetAlertTime;
-	final int refreshRate = 1000;
+	final int refreshRate = 10000;
 	int preAlertTime = 10;
 	JSpinner spinnerAlertTimer;
 	

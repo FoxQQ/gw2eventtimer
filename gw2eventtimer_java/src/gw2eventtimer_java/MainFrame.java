@@ -40,7 +40,7 @@ public class MainFrame extends JFrame implements ActionListener{
 	public MainFrame(int width,int height) throws IOException {
 		
 		try {
-			reader = new CSVreader("E:\\0_myworkspace\\gw2eventtimer\\invasion_new.csv");
+			reader = new CSVreader(new java.io.File(".").getCanonicalPath()+"\\data\\invasion_new.csv");
 			
 		} catch (IOException e) {
 			// TODO Auto-generated catch block

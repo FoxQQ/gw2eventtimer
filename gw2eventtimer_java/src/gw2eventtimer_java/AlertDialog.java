@@ -34,28 +34,28 @@ public class AlertDialog extends Dialog implements ActionListener{
 		btnOk.setActionCommand("Ok");
 		this.add(btnOk);
 		pack();
-		try {
-			playAlert();
-		} catch (LineUnavailableException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		} catch (UnsupportedAudioFileException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		} catch (IOException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-		// TODO Auto-generated constructor stub
+//		try {
+//			playAlert();
+//		} catch (LineUnavailableException e) {
+//			// TODO Auto-generated catch block
+//			e.printStackTrace();
+//		} catch (UnsupportedAudioFileException e) {
+//			// TODO Auto-generated catch block
+//			e.printStackTrace();
+//		} catch (IOException e) {
+//			// TODO Auto-generated catch block
+//			e.printStackTrace();
+//		}
+//		// TODO Auto-generated constructor stub
 	}
 
-	public void playAlert() throws LineUnavailableException, UnsupportedAudioFileException, IOException {
-		File soundFile = new File("E:\\0_myworkspace\\gw2eventtimer\\Heimat.wav");
-		clip = AudioSystem.getClip();
-		AudioInputStream inputStream = AudioSystem.getAudioInputStream(soundFile);
-		clip.open(inputStream);
-		clip.start();
-	}
+//	public void playAlert() throws LineUnavailableException, UnsupportedAudioFileException, IOException {
+//		File soundFile = new File(new java.io.File(".").getCanonicalPath()+"\\data\\Heimat.wav");
+//		clip = AudioSystem.getClip();
+//		AudioInputStream inputStream = AudioSystem.getAudioInputStream(soundFile);
+//		clip.open(inputStream);
+//		clip.start();
+//	}
 	
 	
 	@Override

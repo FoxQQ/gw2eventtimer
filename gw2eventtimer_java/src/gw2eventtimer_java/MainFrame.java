@@ -10,6 +10,7 @@ import java.awt.GridLayout;
 import java.awt.Toolkit;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.io.IOException;
 import java.util.Date;
 import java.util.Hashtable;
 import java.util.Map;
@@ -27,16 +28,24 @@ import javax.swing.border.Border;
 
 public class MainFrame extends JFrame implements ActionListener{
 	
-	JLabel jLabelLocalTime, jLabelUTCTime;
+	JLabel jLabelLocalTime, jLabelUTCTime, nextMap ;
 	Date today;
 	Timer mytimer;
 	JButton btnToggleTimer, btnSetAlertTime;
-	final int refreshRate = 10000;
-	int preAlertTime = 10;
+	final int refreshRate = 1000;
+	int preAlertTime = 20;
 	JSpinner spinnerAlertTimer;
+	CSVreader reader;
 	
-	public MainFrame(int width,int height) {
+	public MainFrame(int width,int height) throws IOException {
 		
+		try {
+			reader = new CSVreader("E:\\0_myworkspace\\gw2eventtimer\\invasion_new.csv");
+			
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		
 		this.setSize(width, height);
 		this.setAutoRequestFocus(true);
@@ -77,7 +86,7 @@ public class MainFrame extends JFrame implements ActionListener{
 	}
 	
 	@SuppressWarnings("deprecation")
-	public void initComponents() {
+	public void initComponents() throws IOException {
 		jLabelLocalTime= new JLabel();
 		jLabelUTCTime=new JLabel();
 		today = new Date();
@@ -126,8 +135,9 @@ public class MainFrame extends JFrame implements ActionListener{
 		//3.5 row
 		c.gridwidth=GridBagConstraints.REMAINDER;;
 		c.weighty=1;
-		JLabel nextMap = new JLabel();
-		nextMap.setText("Next Map:");
+		nextMap = new JLabel();
+		nextMap.setText("Upcoming:" + reader.getEntry(getHours(today.getHours()), getDay(today.getDay())));
+		
 		nextMap.setBorder(BorderFactory.createMatteBorder(10, 10, 10, 10, Color.GREEN));
 		getContentPane().add(nextMap,c);
 		
@@ -149,7 +159,7 @@ public class MainFrame extends JFrame implements ActionListener{
 		btnSetAlertTime.addActionListener(this);
 		gridbag.setConstraints(btnSetAlertTime, c);
 		getContentPane().add(btnSetAlertTime);
-		c.gridwidth=1;
+		c.gridwidth=GridBagConstraints.REMAINDER;
 		int day = today.getDay();
 		JLabel labelDay = new JLabel();
 		switch (day) {
@@ -180,6 +190,19 @@ public class MainFrame extends JFrame implements ActionListener{
 		pack();
 	}
 
+	public int getDay(int day) {
+		if (day!=0) {
+			return day-1;
+		}
+		else return 6;
+	}
+	
+	public int getHours(int hours) {
+		if(hours==0) return 22;
+		else if (hours==1) return 23;
+		else return hours-2;
+	}
+	
 	@Override
 	public void actionPerformed(ActionEvent arg0) {
 		// TODO Auto-generated method stub
@@ -187,9 +210,23 @@ public class MainFrame extends JFrame implements ActionListener{
 		today = new Date();
 		jLabelLocalTime.setText(Integer.toString(today.getHours())+":"+Integer.toString(today.getMinutes())+":"+Integer.toString(today.getSeconds()));
 		jLabelUTCTime.setText(Integer.toString(today.getHours()-2)+":"+Integer.toString(today.getMinutes())+":"+Integer.toString(today.getSeconds()));
+		try {
+			nextMap.setText("Upcoming:" + reader.getEntry(getHours(today.getHours()), getDay(today.getDay())));
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		if(today.getMinutes()==preAlertTime && today.getSeconds()==0) {
-			AlertDialog alert=new AlertDialog(null,"New Ivasion will start in " + Integer.toString(30-today.getMinutes()) + " minutes!",this.getLocation());
-			alert.show();
+			
+			AlertDialog alert;
+			try {
+				alert = new AlertDialog(null,"New Ivasion will start in " + Integer.toString(30-today.getMinutes()) + " minutes in " +reader.getEntry(getHours(today.getHours()), getDay(today.getDay())) + "!",this.getLocation());
+				alert.show();
+			} catch (IOException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+			
 		}
 		if("toggleTimer".equals(arg0.getActionCommand())) {
 			if(mytimer.isRunning()) {
